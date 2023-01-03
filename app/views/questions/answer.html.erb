@@ -1,0 +1,22 @@
+<div class="container m-3">
+  <div class="item-centered">
+    <div class="border border-success p-2 mb-2">
+      <div class="row align-items-center">
+        <div class="col-8"><%= @user_input %></div>
+        <div class="col-2">- <i>You</i></div>
+      </div>
+    </div>
+    <div class="border border-danger p-2 mb-2">
+      <div class="row align-items-center">
+        <div class="col-8"><%= @answer.flatten[0] %></div>
+        <div class="col-2">- <i>Your Coach</i></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+  <a href="/ask" class="btn btn-primary">
+    <%# <%= link_to 'Ask a new question', ask_path %>
+    Ask a new question
+  </a>
+</div>
